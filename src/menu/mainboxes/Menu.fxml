@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="125.0" prefWidth="275.0" xmlns="http://javafx.com/fxml" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.mainboxes.MenuController">
+   <children>
+      <MenuBar prefHeight="26.0" prefWidth="275.0" />
+      <Button layoutX="20.0" layoutY="42.0" mnemonicParsing="false" onAction="#addShip" prefHeight="35.0" prefWidth="110.0" styleClass="plane" text="Add ship" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="145.0" layoutY="42.0" mnemonicParsing="false" onAction="#addPlane" prefHeight="35.0" prefWidth="110.0" text="Add plane" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="militaryCheckBox" layoutX="100.0" layoutY="93.0" mnemonicParsing="false" text="Military" />
+   </children>
+</AnchorPane>

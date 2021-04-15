@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="300.0" xmlns="http://javafx.com/fxml" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.planecreationboxes.AddMilitaryPlaneBoxController">
+    <children>
+        <Button fx:id="addPlane" layoutX="82.0" layoutY="383.0" mnemonicParsing="false" onAction="#addPlane" prefHeight="42.0" prefWidth="136.0" text="Create plane">
+            <font>
+                <Font size="16.0" />
+            </font></Button>
+        <TextField fx:id="idField" layoutX="24.0" layoutY="111.0" prefHeight="26.0" prefWidth="102.0" />
+        <Label contentDisplay="CENTER" layoutX="37.0" layoutY="81.0" text="Name (ID):">
+            <font>
+                <Font size="16.0" />
+            </font></Label>
+        <ListView fx:id="flightPlanListView" layoutX="20.0" layoutY="272.0" prefHeight="102.0" prefWidth="110.0" />
+        <ChoiceBox fx:id="airportChoiceBox" layoutX="157.0" layoutY="272.0" onAction="#addAirportToFlightPlan" prefHeight="26.0" prefWidth="118.0" />
+        <Button fx:id="clearAllButton" layoutX="175.0" layoutY="347.0" mnemonicParsing="false" onAction="#clearFlightPlan" prefHeight="26.0" prefWidth="78.0" text="Clear list" />
+        <Label contentDisplay="CENTER" layoutX="82.0" layoutY="231.0" prefHeight="26.0" prefWidth="136.0" text="Choose flight plan">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Button fx:id="removeAirportButton" layoutX="155.0" layoutY="310.0" mnemonicParsing="false" onAction="#removeLastAirport" prefHeight="26.0" prefWidth="118.0" text="Remove last entry" textAlignment="CENTER" wrapText="true" />
+        <Label layoutX="27.0" layoutY="151.0" text="Staff:">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Slider fx:id="staffSlider" layoutX="75.0" layoutY="163.0" prefHeight="6.0" prefWidth="66.0" />
+        <Label fx:id="staffLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="94.0" layoutY="143.0" text="Label" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="157.0" layoutY="81.0" prefHeight="26.0" prefWidth="118.0" text="Starting carrier:" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="startShipChoiceBox" layoutX="155.0" layoutY="111.0" prefHeight="26.0" prefWidth="118.0" />
+      <Label fx:id="armamentLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="165.0" layoutY="184.0" prefHeight="42.0" prefWidth="102.0" text="*armament*" textAlignment="CENTER" wrapText="true" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="157.0" layoutY="157.0" prefHeight="26.0" prefWidth="118.0" text="Weapon type:" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="20.0" layoutY="197.0" prefHeight="20.0" prefWidth="46.0" text="Speed:" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Slider fx:id="speedSlider" layoutX="75.0" layoutY="207.0" prefHeight="6.0" prefWidth="66.0" />
+      <Label fx:id="speedLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="94.0" layoutY="188.0" text="Label" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="37.0" layoutY="22.0" prefHeight="42.0" prefWidth="226.0" text="Create Military Aircraft" textAlignment="CENTER">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+    </children>
+
+</AnchorPane>

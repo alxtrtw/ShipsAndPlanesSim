@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="250.0" prefWidth="200.0" xmlns="http://javafx.com/fxml" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.locationinfoboxes.CrossingBoxController">
+    <children>
+        <Label fx:id="idLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="26.0" prefHeight="27.0" prefWidth="168.0" text="Label" textAlignment="CENTER">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="typeLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="53.0" prefHeight="18.0" prefWidth="111.0" text="Crossing" textAlignment="CENTER" />
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="87.0" text="Ships in queue">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <ListView fx:id="shipsListView" layoutX="35.0" layoutY="119.0" prefHeight="95.0" prefWidth="130.0" />
+    </children>
+
+</AnchorPane>

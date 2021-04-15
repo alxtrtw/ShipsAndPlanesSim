@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="325.0" prefWidth="250.0" xmlns="http://javafx.com/fxml" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.shipcreationboxes.AddPassengerShipBoxController">
+    <children>
+        <Button layoutX="79.0" layoutY="270.0" mnemonicParsing="false" onAction="#addShip" prefHeight="33.0" prefWidth="91.0" text="Create Ship" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+        <TextField fx:id="idField" layoutX="115.0" layoutY="71.0" prefHeight="26.0" prefWidth="100.0" />
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="31.0" layoutY="73.0" prefHeight="22.0" prefWidth="72.0" text="Name (ID):" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="113.0" prefHeight="26.0" prefWidth="100.0" text="Starting location:" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+        <ChoiceBox fx:id="crossingChoiceBox" layoutX="15.0" layoutY="149.0" prefHeight="26.0" prefWidth="100.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="38.0" layoutY="22.0" prefHeight="34.0" prefWidth="175.0" text="Create a cruise ship" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="25.0" layoutY="230.0" prefHeight="40.0" prefWidth="91.0" text="Seats:" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Slider fx:id="capacitySlider" layoutX="134.0" layoutY="243.0" prefHeight="14.0" prefWidth="91.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="140.0" layoutY="113.0" prefHeight="26.0" prefWidth="80.0" text="Company:" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <ChoiceBox fx:id="companyChoiceBox" layoutX="130.0" layoutY="149.0" prefHeight="26.0" prefWidth="100.0" />
+      <Slider fx:id="speedSlider" layoutX="134.0" layoutY="208.0" prefHeight="14.0" prefWidth="91.0" />
+      <Label contentDisplay="CENTER" layoutX="25.0" layoutY="195.0" prefHeight="40.0" prefWidth="80.0" text="Speed:" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label fx:id="speedLabel" contentDisplay="CENTER" layoutX="75.0" layoutY="202.0" prefHeight="26.0" prefWidth="56.0" text="*speed*" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="capacityLabel" contentDisplay="CENTER" layoutX="75.0" layoutY="237.0" prefHeight="26.0" prefWidth="56.0" text="*seats*" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+    </children>
+
+</AnchorPane>

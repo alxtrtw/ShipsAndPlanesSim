@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="325.0" prefWidth="250.0" xmlns="http://javafx.com/fxml" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.shipcreationboxes.AddMilitaryShipBoxController">
+    <children>
+        <Button fx:id="addShip" layoutX="79.0" layoutY="267.0" mnemonicParsing="false" onAction="#addShip" prefHeight="33.0" prefWidth="91.0" text="Create Ship" textAlignment="CENTER">
+            <font>
+                <Font size="14.0" />
+            </font></Button>
+        <TextField fx:id="idField" layoutX="115.0" layoutY="71.0" prefHeight="26.0" prefWidth="100.0" />
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="31.0" layoutY="73.0" prefHeight="22.0" prefWidth="72.0" text="Name (ID):" textAlignment="CENTER">
+            <font>
+                <Font size="15.0" />
+            </font></Label>
+        <Label alignment="CENTER" layoutX="11.0" layoutY="122.0" prefHeight="26.0" prefWidth="112.0" text="Starting location:" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font size="13.0" />
+            </font></Label>
+        <ChoiceBox fx:id="crossingChoiceBox" layoutX="17.0" layoutY="163.0" prefHeight="26.0" prefWidth="100.0" />
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="22.0" prefHeight="34.0" prefWidth="215.0" text="Create an Aircraft Carrier" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+        <Slider fx:id="speedSlider" layoutX="139.0" layoutY="229.0" prefHeight="14.0" prefWidth="91.0" />
+        <Label contentDisplay="CENTER" layoutX="31.0" layoutY="216.0" prefHeight="40.0" prefWidth="72.0" text="Speed:" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font size="13.0" />
+            </font></Label>
+      <Label alignment="CENTER" layoutX="125.0" layoutY="122.0" prefHeight="26.0" prefWidth="119.0" text="Weapon produced:" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="armamentChoiceBox" layoutX="135.0" layoutY="163.0" prefHeight="26.0" prefWidth="100.0" />
+      <Label fx:id="speedLabel" layoutX="77.0" layoutY="227.0" prefHeight="18.0" prefWidth="40.0" text="Label" />
+    </children>
+
+</AnchorPane>

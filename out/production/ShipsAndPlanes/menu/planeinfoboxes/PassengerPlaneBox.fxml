@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="425.0" prefWidth="275.0" xmlns="http://javafx.com/fxml" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.planeinfoboxes.PassengerPlaneBoxController">
+    <children>
+        <Label fx:id="idLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="60.0" layoutY="18.0" prefHeight="30.0" prefWidth="150.0" text="Label" textAlignment="CENTER">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="153.0" layoutY="354.0" mnemonicParsing="false" onAction="#deletePlane" prefHeight="45.0" prefWidth="95.0" text="Delete plane" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font size="13.0" />
+            </font></Button>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="180.0" layoutY="122.0" prefHeight="20.0" prefWidth="75.0" text="Fuel: " textAlignment="CENTER">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+        <Label fx:id="fuelLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="192.0" layoutY="145.0" prefHeight="18.0" prefWidth="50.0" text="*fuel*" textAlignment="CENTER">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+        <Button layoutX="29.0" layoutY="354.0" mnemonicParsing="false" onAction="#emergencyLanding" prefHeight="45.0" prefWidth="95.0" text="Emergency landing" textAlignment="CENTER" wrapText="true" />
+        <ListView fx:id="flightPlanListView" layoutX="21.0" layoutY="207.0" prefHeight="85.0" prefWidth="110.0" />
+        <Label alignment="CENTER" layoutX="68.0" layoutY="177.0" prefHeight="20.0" prefWidth="138.0" text="Change flight plan">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+        <ChoiceBox fx:id="airportChoiceBox" layoutX="146.0" layoutY="207.0" onAction="#addAirportToFlightPlan" prefHeight="26.0" prefWidth="110.0" />
+        <Button alignment="CENTER" layoutX="157.0" layoutY="253.0" mnemonicParsing="false" onAction="#removeLastAirport" prefHeight="39.0" prefWidth="86.0" text="Remove last" textAlignment="CENTER" wrapText="true" />
+        <Button layoutX="164.0" layoutY="306.0" mnemonicParsing="false" onAction="#clearFlightPlan" prefHeight="26.0" prefWidth="75.0" text="Clear list" />
+        <Button layoutX="33.0" layoutY="306.0" mnemonicParsing="false" onAction="#setNewFlightPlan" prefHeight="26.0" prefWidth="86.0" text="Set new plan" />
+      <Label fx:id="companyLabel" alignment="CENTER" layoutX="66.0" layoutY="48.0" prefHeight="18.0" prefWidth="138.0" text="*Company* plane" textAlignment="CENTER" />
+      <Label alignment="CENTER" layoutX="100.0" layoutY="74.0" prefHeight="20.0" prefWidth="75.0" text="Flying to: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="locationLabel" alignment="CENTER" layoutX="62.0" layoutY="94.0" prefHeight="20.0" prefWidth="150.0" text="*location*">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="119.0" prefHeight="26.0" prefWidth="75.0" text="Passengers:" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="passengersLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="112.0" layoutY="145.0" prefHeight="18.0" prefWidth="50.0" text="*passgs*" textAlignment="CENTER">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="122.0" prefHeight="20.0" prefWidth="75.0" text="Staff:" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="staffLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="32.0" layoutY="145.0" prefHeight="18.0" prefWidth="50.0" text="*staff*" textAlignment="CENTER">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+    </children>
+
+</AnchorPane>
